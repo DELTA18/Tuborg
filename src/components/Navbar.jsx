@@ -1,10 +1,11 @@
 import React from 'react'
+import Logo from '../assets/Tuborg-Logo-2008.png'
 
 const Navbar = () => {
   return (
     <div className='navbar_pos'>
     <div className="navbar">
-      <div className="logo">Tuborg</div>
+      <img src={Logo} className="logo"></img>
       <nav>
         <ul className="nav-links">
           <li><a href="#home">About</a></li>

@@ -1,6 +1,7 @@
 import Spline from '@splinetool/react-spline';
 import Navbar from './components/Navbar';
 import Second from './components/Second';
+import Third from './components/Third';
 export default function App() {
   return (
     <>
@@ -10,9 +11,7 @@ export default function App() {
     <Navbar/>
     </div>
     <Second/>
-    <div>
-      heloo
-    </div>
+    <Third />
     </>
   );
 }

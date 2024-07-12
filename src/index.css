@@ -102,7 +102,7 @@ button:focus-visible {
   /* width: 100%; */
   margin-left: 50px;
   margin-right: 50px;
-  padding: 5px;
+  padding: 10px;
   color: #121212;
   display: flex;
   justify-content: space-between;
@@ -111,8 +111,7 @@ button:focus-visible {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  width: 120px;
 }
 
 .nav-links {
@@ -131,4 +130,11 @@ button:focus-visible {
 .nav-links a:hover {
   /* text-decoration: underline; */
   color: #929292;
+}
+
+.screen_width{
+  width: 98.9vw;
+}
+.ff{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
