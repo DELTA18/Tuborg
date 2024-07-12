@@ -1,0 +1,18 @@
+import Spline from '@splinetool/react-spline';
+import Navbar from './components/Navbar';
+import Second from './components/Second';
+export default function App() {
+  return (
+    <>
+    <div className='containerr'>
+    <Spline className='spline_scene' scene="https://prod.spline.design/dmeNI1I3f2W8Syy6/scene.splinecode" >
+    </Spline>
+    <Navbar/>
+    </div>
+    <Second/>
+    <div>
+      heloo
+    </div>
+    </>
+  );
+}
