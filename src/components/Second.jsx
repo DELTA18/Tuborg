@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useAnimation, useScroll, useTransform, useInView } from 'framer-motion';
+import Third_bg from './Third_bg';
 // import '../styles/second.css'; // Uncomment if you have styles
 
 const Second = () => {
@@ -38,8 +39,9 @@ const Second = () => {
       <motion.div ref={targetRef} style={{ opacity, scaleX, scaleY, translateY }} className="overflow-hidden size-52 absolute bg-green-500 rounded-md">
       </motion.div>
       <div className='flex absolute screen_width justify-between overflow-hidden' style={{height:'114vh'}}>
-        <motion.div className="relative w-10 h-80  bg-green-200" style={{ translateY: divscroll_right }}></motion.div>
-        <motion.div className="relative w-10 h-80 bg-green-200" style={{ translateY: divscroll_left }}></motion.div>
+        {/* <motion.div className="relative w-10 h-80  bg-green-200" style={{ translateY: divscroll_right }}></motion.div>
+        <motion.div className="relative w-10 h-80 bg-green-200" style={{ translateY: divscroll_left }}></motion.div> */}
+        <Third_bg/>
       </div>
       <div className="second_container h-fit flex items-center flex-col screen_width z-10 my-52">
         <motion.div className="z-10 text-9xl ff font-extrabold" animate={mainControls} initial="hidden" variants={{

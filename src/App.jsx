@@ -2,6 +2,7 @@ import Spline from '@splinetool/react-spline';
 import Navbar from './components/Navbar';
 import Second from './components/Second';
 import Third from './components/Third';
+import Logistics from './components/Logistics';
 export default function App() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function App() {
     </div>
     <Second/>
     <Third />
+    <Logistics />
     </>
   );
 }

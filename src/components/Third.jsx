@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
@@ -12,11 +11,20 @@ import 'swiper/css/navigation';
 //images
 import img1 from '../assets/tuborg_classic.png'
 
+import {motion} from 'framer-motion'
+import Third_bg from './Third_bg';
+
 const Third = () => {
   const swiper = useSwiperSlide();
   return (
-    <div className='third h-screen'>
-      <div className='text-6xl text-center mt-28 ff font-bold'>Our Products</div>
+    <div className='third containerr'>
+      {/* <div className='relative screen_width h-[110vh] overflow-hidden bg-orange-600'>
+        <Spline className=' h-80 ' scene="https://prod.spline.design/IRpGvHSLwbkdswBs/scene.splinecode" />
+      </div> */}
+      {/* <Third_bg/> */}
+      <div className="third_content">
+
+      <div className='text-6xl text-center relative mt-28 ff font-bold'>Our Products</div>
       <Swiper
       modules={[EffectCoverflow, Navigation, Pagination]}
         effect={'coverflow'}
@@ -51,6 +59,7 @@ const Third = () => {
           <div className="slider-button-prev slider-arrow"></div>
         </div>
       </Swiper>
+      </div>
     </div>
 
   )
