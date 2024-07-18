@@ -102,12 +102,14 @@
   margin: 160px;
 }
 .logistics_data{
-  font-size: 2rem;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   /* font-weight: 900; */
 }
 .logistics_num{
-  font-size: 5rem;
-  line-height: 50%;
+  font-size: 4rem;
   background: #02CF07;
   background: linear-gradient(to top, #02CF07 0%, #1011CF 100%);
   -webkit-background-clip: text;
