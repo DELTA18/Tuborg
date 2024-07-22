@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import { Controller, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,6 +16,10 @@ import Third_bg from './Third_bg';
 
 const Third = () => {
   const swiper = useSwiperSlide();
+
+  const [firstSwiper, setFirstSwiper] = React.useState(null);
+  const [secondSwiper, setSecondSwiper] = React.useState(null);
+
   return (
     <div className='third containerr'>
       {/* <div className='relative screen_width h-[110vh] overflow-hidden bg-orange-600'>
@@ -26,18 +30,18 @@ const Third = () => {
 
       <div className='text-6xl text-center relative mt-28 ff font-bold'>Our Products</div>
       <Swiper
-      modules={[EffectCoverflow, Navigation, Pagination]}
+      modules={[ Navigation, Pagination]}
         effect={'coverflow'}
-        grabCursor={true}
+        // grabCursor={true}
         centeredSlides={true}
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
         pagination={{
           clickable: true,
         }}
         coverflowEffect={{ rotate: 50, stretch: 0, depth: 100, modifier: 1, slideShadows: true }}
         loop={true} 
-        className='swiper_container'>
+        className='swiper_container bg-slate-700'>
         <SwiperSlide className='swiperslide'>
           {({ isActive }) => (
             <img src="https://swiperjs.com/demos/images/nature-1.jpg" className={`swiper_img ${isActive ? 'active' : ' '}`} />

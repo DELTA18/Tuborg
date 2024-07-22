@@ -4,6 +4,7 @@ import Second from './components/Second';
 import Third from './components/Third';
 import Logistics from './components/Logistics';
 import Footer from './components/Footer';
+import Ask from './components/Ask';
 export default function App() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function App() {
     <Second/>
     <Third />
     <Logistics />
+    <Ask />
     <Footer />
     </>
   );
