@@ -76,15 +76,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
   width: 1200px;
 }
 .swiperslide{
   background-color: #cd2c2c00;
-  height: 100vh;
+  height: 100px;
 }
 .swiper_img{
-  height: 100vh;
+  height: 500px;
   /* border-radius: 2rem; */
   object-fit: cover;
   width: 100%;

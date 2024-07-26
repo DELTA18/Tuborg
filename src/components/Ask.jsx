@@ -12,7 +12,7 @@ const Ask = () => {
         <div className='screen_width h-screen overflow-hidden relative z-20 flex justify-start items-center' >
             <div className='w-[50%] flex flex-col justify-center items-center '>
                 <lable className='text-white mx-10 text-center text-6xl poppins-bold'>EXPLORE TUBORG MUSIC. THE PLATFORM FOR MAKING MUSIC ACROSS BORDERS.</lable>
-                <div className=' bg-slate-900 flex items-center px-10 py-4 my-5 text-white poppins-regular'>Join Now
+                  <div className=' bg-slate-900 flex items-center px-10 py-4 my-5 text-white poppins-regular'>Join Now
                 </div>
             </div>
         </div>

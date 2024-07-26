@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
-import { Controller, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,16 +10,18 @@ import 'swiper/css/navigation';
 
 //images
 import img1 from '../assets/tuborg_classic.png'
+import tuborg_2 from '../assets/tuborg_2.jpg'
+import tuborg_3 from '../assets/tuborg_3.png'
+import tuborg_4 from '../assets/tuborg_4.jpg' 
+import tuborg_5 from '../assets/tuborg_5.jpg'
+import tuborg_6 from '../assets/tuborg_6.png'
+import tuborg_7 from '../assets/tuborg_7.webp'
 
 import {motion} from 'framer-motion'
 import Third_bg from './Third_bg';
 
 const Third = () => {
   const swiper = useSwiperSlide();
-
-  const [firstSwiper, setFirstSwiper] = React.useState(null);
-  const [secondSwiper, setSecondSwiper] = React.useState(null);
-
   return (
     <div className='third containerr'>
       {/* <div className='relative screen_width h-[110vh] overflow-hidden bg-orange-600'>
@@ -28,38 +30,41 @@ const Third = () => {
       {/* <Third_bg/> */}
       <div className="third_content">
 
-      <div className='text-6xl text-center relative mt-28 ff font-bold'>Our Products</div>
+      <div className='text-6xl text-center relative mt-28 ff font-bold poppins-bold'>Our Products</div>
       <Swiper
-      modules={[ Navigation, Pagination]}
+      modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
         effect={'coverflow'}
-        // grabCursor={true}
+        grabCursor={true}
         centeredSlides={true}
         spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={3}
         pagination={{
           clickable: true,
         }}
+        navigation={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{ rotate: 50, stretch: 0, depth: 100, modifier: 1, slideShadows: true }}
         loop={true} 
-        className='swiper_container bg-slate-700'>
-        <SwiperSlide className='swiperslide'>
-          {({ isActive }) => (
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" className={`swiper_img ${isActive ? 'active' : ' '}`} />
-          )}
+        className='swiper_container'>
+        <SwiperSlide>
+            <img src={img1} className='swiper_img'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img1} className='swiper_img'/>
+          <img src={tuborg_7} className='swiper_img'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" className='swiper_img'/>
+          <img src={tuborg_2} className='swiper_img'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" className='swiper_img'/>
+          <img src={tuborg_3} className='swiper_img'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" className='swiper_img'/>
+          <img src={tuborg_4} className='swiper_img'/>
         </SwiperSlide>
-        <div className="slider-controller">
+        <div className="slider-controller top-10">
           <div className="slider-button-prev slider-arrow"></div>
         </div>
       </Swiper>
